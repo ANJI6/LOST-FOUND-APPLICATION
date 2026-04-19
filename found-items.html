@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Items - Lost & Found Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .item-card { border-left: 5px solid #51cf66; }
+    </style>
+</head>
+<body>
+    <!-- Same navbar as lost-items.html -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="dashboard.html">
+                <i class="fas fa-search text-primary me-2"></i>Lost & Found
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link active" href="found-items.html">Found Items</a>
+                <a class="nav-link" href="report-found.html">Report Found</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1 class="h2 fw-bold text-success">
+                        <i class="fas fa-check-circle me-2"></i>Found Items
+                    </h1>
+                    <a href="report-found.html" class="btn btn-success btn-lg">
+                        <i class="fas fa-plus me-2"></i>Report Found Item
+                    </a>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Similar structure to lost-items but with green theme -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card item-card h-100">
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                                <i class="fas fa-umbrella fa-4x text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5>Black Umbrella</h5>
+                                <p><i class="fas fa-map-marker-alt me-1 text-muted"></i>Cafeteria • 1 hour ago</p>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-success">FOUND</span>
+                                    <small>Anonymous</small>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-success btn-sm">Claim</button>
+                                    <button class="btn btn-success btn-sm">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more cards... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
